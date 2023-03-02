@@ -16,6 +16,6 @@ output "sample1" {
 
 variable "cli" {}
 
-outpu "cli" {
+output "cli" {
     value = var.cli
 }

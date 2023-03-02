@@ -50,7 +50,7 @@ variable "sample8" {
 
 output "types" {
     
-     value = "Variable sample6 - ${var.sample6}, Variabe of List Sample7 - ${var.sample7[0]}, Variable of Map Sample8 - ${var.sample8["boolean"]}"
+     value = "Variable sample6 - ${var.sample6}, Variabe of List Sample7 - ${var.sample7[0]}, Variable of Map Sample8 = ${var.sample8["boolean"]}"
     
 }
 

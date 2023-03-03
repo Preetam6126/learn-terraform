@@ -40,7 +40,7 @@ variable "sample7" {
 
 variable "sample8" {
     
-    default = {
+    defualt = {
         string = "hello",
         number = 1000,
         boolean = true

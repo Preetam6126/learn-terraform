@@ -11,4 +11,3 @@ resource "aws_instance" "frontend" {
     vpc_security_group_ids = ["sg-0dfcc82daa20fc54d"]
    
     }
-}

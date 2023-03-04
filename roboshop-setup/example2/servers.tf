@@ -5,9 +5,19 @@ data "aws_ami" "example" {
 }
 
 resource "aws_instance" "frontend" {
-    count = 5
+    count = lenght(var.instances)
     ami = data.aws_ami.example.image_id
     instance_type = "t3.micro"
     vpc_security_group_ids = ["sg-0dfcc82daa20fc54d"]
    
     }
+
+variable "instances" {
+  
+   default = ["cart", "catalogue", "user", "payment", "shipping"]
+}
+
+output "public-ip" {
+    
+    value = aws_instance.frontend.*.public_ip
+}

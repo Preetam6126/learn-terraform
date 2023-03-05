@@ -39,3 +39,5 @@ resource "null_resource" "d3" {
     
     for_each = var.d3
 }
+
+output

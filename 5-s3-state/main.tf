@@ -17,8 +17,4 @@ terraform {
 # }
 
 
-resource "null_resource" "provisioner" {
-  provisioner "remote-exec" {
-        
-        
-    }
+resource "null_resource" "provisioner" {}

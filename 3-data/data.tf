@@ -14,3 +14,8 @@ data "aws_instance" "jenkins" {
   
   instance_id = "i-0ceae52abd7e93392"
 }
+
+output "ami-instace" {
+value = data.aws_instance.jenkins.private_ip
+    
+}
